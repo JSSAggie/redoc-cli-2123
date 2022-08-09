@@ -1,0 +1,22 @@
+{
+  "name": "redoc-cli-2123",
+  "version": "1.0.0",
+  "description": "Repo to reproduce the redoc cli issue 2123",
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSSAggie/redoc-cli-2123.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JSSAggie/redoc-cli-2123/issues"
+  },
+  "homepage": "https://github.com/JSSAggie/redoc-cli-2123#readme",
+  "scripts": {
+    "test": "npm run bundle && open pet-store.html",
+    "bundle": "redoc-cli bundle --cdn https://redocly.github.io/redoc/openapi.yaml --output pet-store.html --options.showExtensions=true"
+  },
+  "dependencies": {
+    "redoc-cli": "0.13.16"
+  }
+}
